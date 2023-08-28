@@ -45,9 +45,9 @@ def gdistance(human, model, universal, weight, frequencies, xtdo):
     else:
         return distance;
 
-out = gdistance(human, model, 10, 0.5, frequencies = [0.3, 0.1, 0.6], xtdo = True)
+# out = gdistance(human, model, 10, 0.5, frequencies = [0.3, 0.1, 0.6], xtdo = True)
 
-out.show()
-print(out)
-out.distance
-out.accommodation
+# out.show()
+# print(out)
+# out.distance
+# out.accommodation

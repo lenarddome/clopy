@@ -3,6 +3,7 @@
 Global Benchmark and Evaluation Toolkit for Formal Computational Models in Python.
 
 Currently incorporates tools used in comparing model and human heterogeneity, see Dome and Wills (2023).
+Its sister R package `clobe` implementes the tools in R.
 
 ## Paper
 
