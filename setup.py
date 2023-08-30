@@ -1,13 +1,12 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
-DESCRIPTION = 'My first Python package'
-LONG_DESCRIPTION = 'My first Python package with a slightly longer description'
+VERSION = '0.2.0'
+DESCRIPTION = 'Global Benchmark and Evaluation Tools for Formal Computational Models'
+LONG_DESCRIPTION = ' Provides tools for the qualitative evaluation of formal computational models. Currently incorporates tools used in comparing model and human heterogeneity, see Dome and Wills (2023) <doi:10.31234/osf.io/ygmcj>.'
 
 # Setting up
 setup(
-       # the name must match the folder name 'verysimplemodule'
-        name="clobe", 
+        name="clopy", 
         version=VERSION,
         author="Lenard Dome",
         author_email="lenarddome@gmail.com",
@@ -15,9 +14,8 @@ setup(
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         install_requires=['numpy'], # add any additional packages that 
-        # needs to be installed along with your package. Eg: 'caer'
         
-        keywords=['computational modelling', 'g-distance'],
+        keywords=['computational modelling', 'g-distance', 'discretization', 'ordinal analysis'],
         classifiers= [
             "Development Status :: 3 - Alpha",
             "Intended Audience :: Science/Research",

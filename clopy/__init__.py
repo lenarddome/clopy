@@ -1,1 +1,2 @@
-from . import imac, gdistance
+from .imac import imac
+from .gdistance import gdistance
