@@ -18,10 +18,10 @@ def gdistance(human, model, universal, weight, frequencies, xtdo):
             return self.beta;
         def accommodation(self):
             return self.accommodation;
-        
+
         def __str__(self):
             return "gdistance: " + str(self.distance) + "\nalpha: " + str(self.alpha) + "\nbeta: " + str(self.beta);
-        
+
         def show(self):
             print("gdistance: " + str(self.distance) + "\nalpha: " + str(self.alpha) + "\nbeta: " + str(self.beta));
 
@@ -29,10 +29,12 @@ def gdistance(human, model, universal, weight, frequencies, xtdo):
     hlength = len(human);
     mlength = len(model);
     accommodation = np.zeros((hlength, mlength)).astype(int);
+
     for i in range(hlength):
         for j in range(mlength):
             if (human[i] == model[j]).all():
                 accommodation[i, j] = 1;
+
     weighted = accommodation.sum(1) * frequencies;
     alpha = weighted.sum();
     ump = np.count_nonzero(accommodation.sum(0) == 0);
